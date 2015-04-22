@@ -84,3 +84,24 @@ footer {
         font-size:0.75em;
     }
 }
+.right article header {
+background-color: #203D89;
+	line-height: normal;
+	color: #F6EF87;
+	font-size: 0.8em;
+	padding: 5px 0;
+    
+}
+
+.right article header h2,h3 {
+margin: 0px;
+
+}
+
+article {
+border: 1px solid  #203D89;
+background-color: #FFFFFF;
+	margin: 0 auto;
+	position: relative;
+	bottom: -15px;
+}
