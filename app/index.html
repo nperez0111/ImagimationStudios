@@ -54,7 +54,23 @@ http://slickplan.com/gdnjqbjhde
 
     <main>
         <div class="wrap">
-            <div class="left"></div>
+            <div class="left">
+                <figure><img src="images/t2.jpg" alt="Terminator 2">
+                    <figcaption>Terminator 2</figcaption>
+                </figure>
+                <figure><img src="images/abyss.jpg" alt="The Abyss">
+                    <figcaption>The Abyss</figcaption>
+                </figure>
+                <figure><img src="images/dino.jpg" alt="Dinosaur Island">
+                    <figcaption>Dinosaur Island</figcaption>
+                </figure>
+                <figure><img src="images/scooby.jpg" alt="Scooby">
+                    <figcaption>From "Jay and Silent Bob Strike Back"</figcaption>
+                </figure>
+                <figure><img src="images/doughboy.jpg" alt="Pillsbury Doughboy">
+                    <figcaption>Pillsbury Doughboy</figcaption>
+                </figure>
+            </div>
             <div class="right">
                 <article>
                     <header>
@@ -83,63 +99,17 @@ http://slickplan.com/gdnjqbjhde
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = '//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
-    </script>
-    <script>
-        $(document).ready(
-            function () {
-                var a = [
-                    {
-                        image: "images/t2.jpg",
-                        title: "Terminator 2",
-                        caption: "Terminator 2"
-                    },
-                    {
-                        image: "images/abyss.jpg",
-                        title: "The Abyss",
-                        caption: "The Abyss"
-                    },
-                    {
-                        image: "images/dino.jpg",
-                        title: "Dinosaur Island",
-                        caption: "Dinosaur Island"
-                    }, {
-                        image: "images/scooby.jpg",
-                        title: "Scooby",
-                        caption: 'From "Jay and Silent Bob Strike Back"'
-                    }, {
-                        image: "images/doughboy.jpg",
-                        title: "Pillsbury Doughboy",
-                        caption: 'Pillsbury Doughboy'
-                    }
-      ];
-                $(".left").PikaChoose({
-                    data: a
-                });
-            });
-    </script>
-
+    
+    <!--
+    
+    
+    https://github.com/kenwheeler/slick/ is the new jquery gallery
+    http://kenwheeler.github.io/slick/ other link with documentation 
+    
+    
+    -->
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.pikachoose.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.touchwipe.min.js"></script>
     <!-- endbuild -->
 </body>
 
