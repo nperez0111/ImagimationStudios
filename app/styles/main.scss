@@ -80,6 +80,13 @@ main {
         img {
             margin: 0 auto;
         }
+        figure {
+            width: 50%;
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0.75em;
+            float: left;
+        }
     }
 }
 
@@ -108,28 +115,76 @@ article {
         h2, h3 {
             margin: 0px;
         }
-        
     }
     p {
-            margin: 0;
-            text-align: left;
-            padding: 1em 0.5em;
-            .shortstitles {
-                font-style: italic;
-            }
-            a {
-                color: #F6B20C;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        
+        margin: 0;
+        text-align: left;
+        padding: 1em 0.5em;
+        .shortstitles {
+            font-style: italic;
         }
-    span{
-    padding:1em;
+        a {
+            color: #F6B20C;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
-    ul{
-    margin: 0;
+    span {
+        padding: 1em;
     }
+    ul {
+        margin: 0;
+    }
+    div nav ul {
+        margin: 0 0.5em;
+        li {
+            position: relative;
+            top: 1px;
+            float: left;
+            background-color: #DDD;
+            list-style: none;
+            border-left: solid 1px #CCC;
+            border-bottom: solid 1px #999;
+            border-top: solid 1px #999;
+            border-right: solid 1px #999;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            cursor: pointer;
+            font-family: "Century Gothic", Geneva, Verdana, Helvetica, Arial, sans-serif;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-right: 1px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 3px;
+            padding-right: 10px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+        }
+    }
+    div p:first-of-type,
+    div ul:first-of-type {
+        clear: both;
+    }
+    div nav + ul {
+        padding-top: 1.5em;
+    }
+    div ul {
+        list-style: none;
+        margin:0;
+          padding: 0.65em;
+        li{
+        font-weight: 600;
+            ul li{
+            font-weight: normal;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
 }

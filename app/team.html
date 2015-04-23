@@ -20,7 +20,16 @@ http://slickplan.com/gdnjqbjhde
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/bottom.css">
 
-
+    <style>
+        main .left {
+            width: 30%;
+            vertical-align: top;
+        }
+        
+        main .right {
+            width: 70%;
+        }
+    </style>
     <!-- endbuild -->
 </head>
 
@@ -53,20 +62,20 @@ http://slickplan.com/gdnjqbjhde
     </header>
 
     <main>
-        <div class=wrap>
+        <div class="wrap">
             <div class="left">
 
 
-                <figure>
+                <figure data-id="1">
                     <img src="http://www.imagimationstudios.com/images/hal.jpg" alt="Hal Miles Image">
                     <figcaption>Hal Miles President and Producer/Director</figcaption>
                 </figure>
-                <figure>
+                <figure data-id="2">
                     <img src="http://www.imagimationstudios.com/images/nancy.jpg" alt="Nancy S.Miles Image">
                     <figcaption>Nancy S. Miles Vice President and Producer</figcaption>
                 </figure>
 
-                <figure>
+                <figure data-id="3">
                     <img src="http://www.imagimationstudios.com/images/kevin.jpg" alt="Kevin Thomas">
                     <figcaption>Kevin Thomas Vice President Post Production</figcaption>
                 </figure>
@@ -75,17 +84,25 @@ http://slickplan.com/gdnjqbjhde
             </div>
             <div class="right">
                 <article>
-                    <header>
-                        <h2> Hal Miles</h2>
-                    </header>
+
                     <div id="bio1">
+                        <header>
+                            <h2> Hal Miles</h2>
+                        </header>
+                        <nav>
+                            <ul>
+                                <li data-to="bio1">Bio</li>
+                                <li data-to="credits">Credits</li>
+                                <li data-to="accolades">Accolades and Special Thanks</li>
+                            </ul>
+                        </nav>
                         <p> Hal Miles is an international award winning animation and visual effects film maker. He has had an impressive 30 plus year career in the motion picture, television, and amusement park industries specializing in animation, visual effects, and animatronics as a director, producer, supervisor, and technician.</p>
 
                         <p> Hal has helped to or personally created numerous classic and ground breaking techniques and moments on many animation and visual effects Academy Award and Emmy winning projects. Hal believes in creating a magically fun environment and experience which allows everyone to have just that much more fun while successfully creating.</p>
                     </div>
 
 
-                    <div id="bio2">
+                    <div id="bio2" class="hidden">
                         <header>
                             <h2> Nancy S.Miles </h2>
                         </header>
@@ -93,7 +110,7 @@ http://slickplan.com/gdnjqbjhde
 
                     </div>
 
-                    <div id="bio3">
+                    <div id="bio3" class="hidden">
                         <header>
                             <h2> Kevin Thomas </h2>
                         </header>
@@ -101,12 +118,64 @@ http://slickplan.com/gdnjqbjhde
 
                     </div>
 
+                    <div id="accolades" class="hidden">
+                        <header>
+                            <h3>Accolades and Special Thanks</h3>
+                        </header>
+                        <nav>
+                            <ul>
+                                <li data-to="bio1">Bio</li>
+                                <li data-to="credits">Credits</li>
+                                <li data-to="accolades">Accolades and Special Thanks</li>
+                            </ul>
+                        </nav>
+                        <p> 2007 - AWARDED THE BEST ANIMATED FILM AT THE 2007 INDEPENDENTS FILM FESTIVAL FOR MY ANIMATED SHORT FILM “THE MADNESS OF BEING”.</p>
 
+                        <p>2007 - AWARDED THE SPECIAL JURY AWARD FOR MOST OUTSTANDING FILM AT THE 2007 WINNIPEG INTERNATIONAL FILM FESTIVAL FOR MY ANIMATED SHORT FILM “THE MADNESS OF BEING”.</p>
 
-                    <div id="credits">
+                        <p>2007 - SPECIAL PERSONAL ACCOMMODATION FROM THE SAVANNAH COLLEGE OF ART AND DESIGN PRESIDENT PAULA WALLACE FOR THE CREATION OF MY ANIMATED SHORT FILM “THE MADNESS OF BEING”. </p>
 
-                        <h3>Applied Reserach</h3>
+                        <p>2003 - SPECIAL PERSONAL THANKS FROM SIGGRAPH 2003 CONFERENCE CHAIR AND PRESIDENT ALYN ROCKWOOD FOR THE CREATION OF ALL OF THE MAIN, ENDING, AND SEGWAY TITLES FOR THE ELECTRONIC AND ANIMATION THEATERS FOR SIGGRAPHS 30th ANNIVERSARY CONFERENCE IN 2003. </p>
 
+                        <p>2002 - SPECIAL PERSONAL THANKS FROM SAVANNAH COLLEGE OF ART AND DESIGN PRESIDENT PAULA WALLACE FOR THE GROUNDBREAKING AND STATE OF THE ART DEVELOPMENT OF THE WORLDS FIRST 24P DIGITAL STOP MOTION ANIMATION PRODUCTION “RICK AND ROCKY” AND AS THE OVERALL SPECIAL PROJECT SUPERVISOR AND TECHNICAL DIRECTOR. </p>
+
+                        <p>2001 - SPECIAL PERSONAL THANKS FROM DIRECTOR KEVIN SMITH FOR THE OUTSTANDING ANIMATRONIC WORK ON THE MOVIE "JAY AND SILENT BOB STRIKE BACK". </p>
+
+                        <p>1997 - SPECIAL PERSONAL THANKS FROM SONY PICTURES PRESIDENT JOHN CALLEY FOR THE ACADEMY OF MOTION PICTURE ARTS AND SCIENCES VISUAL EFFECTS NOMINATION FOR THE MOVIE "STARSHIP TROOPERS". </p>
+
+                        <p>1997 - SPECIAL PERSONAL THANKS FROM SONY PICTURES PRESIDENT JOHN CALLEY FOR THE ACADEMY OF MOTION PICTURE ARTS AND SCIENCES BEST PICTURE NOMINATION FOR THE MOVIE "AS GOOD AS IT GETS". </p>
+
+                        <p>1997 - SPECIAL PERSONAL THANKS FROM JAMES CAMERON FOR CONTRIBUTING AS AN ADDITIONAL DIGITAL COMPOSITOR ON SEVERAL SHOTS FOR THE ACADEMY OF MOTION PICTURE ARTS AND SCIENCES BEST PICTURE AND VISUAL EFFECTS AWARD WINNING FILM "TITANIC". </p>
+
+                        <p>1991 & 1992 - SPECIAL PERSONAL THANKS AND CREDIT FROM DIRECTOR JOHN DYKSTRA FOR THE IMPLEMENTATION OF MY DIGITAL STOP MOTION ANIMATION PROCESS AND STOP MOTION PUPPET FABRICATION SUPERVISION FOR SEVERAL AWARD WINNING PILLSBURY DOUGHBOY COMMERCIALS. </p>
+
+                        <p>1991 - SPECIAL PERSONAL THANKS AND CREDIT FROM JAMES CAMERON AND ARNOLD SCHWARZENEGGER FOR THE ACADEMY OF MOTION PICTURE ARTS AND SCIENCES BEST VISUAL EFFECTS AWARD WINNING WORK ON THE FILM "TERMINATOR II". </p>
+
+                        <p>1989 - SPECIAL PERSONAL THANKS AND CREDIT FROM JAMES CAMERON FOR THE GROUND BREAKING AND ACADEMY OF MOTION PICTURE ARTS AND SCIENCES BEST VISUAL EFFECTS AWARD WINNING WORK OF NTI ALIEN EFFECTS FOR THE FILM "THE ABYSS". </p>
+
+                        <p>1986 - SPECIAL PERSONAL THANKS AND APPRECIATION FROM DIRCTOR GEORGE LUCAS FOR THE CREATION OF A SERIES OF "WAITING TO BOARD" COMMERCIALS FOR THE DISNEY THEME PARKS ATTRACTION "STAR TOURS". </p>
+
+                        <p>1985 - SPECIAL PERSONAL THANKS AND APPRECIATION FROM CEO MICHAEL EISNER FOR THE CREATION OF THE WALT DISNEY HOME VIDEO LOGO THAT WAS UTITLIZED FROM 1985 TO 1994 FOR ALL OF THE WALT DISNEY COMPANY’S VIDEO TAPE RELEASES. </p>
+
+                        <p>1983 - SPECIAL PERSONAL THANKS AND APPRECIATION FROM DIRECTOR STEVEN SPIELBERG FOR THE CREATION OF THE OPENING TITLE SEQUENCE FOR THE MOTION PICTURE "TWILIGHT ZONE, THE MOVIE". </p>
+
+                        <p>1982 - SPECIAL PERSONAL THANKS AND APPRECIATION FROM GEORGE JAMISON OF CAMERA ILLUSIONS FOR THE FOR THE DEVELOPEMENT AND MANUFACTURING OF THE FIRST MOTION CONTROL CAMERA SYSTEM FOR THE OMNIMAX FILM FORMAT, WHICH THEY RECIEVED AN ACADEMY OF MOTION PICTURE ARTS AND SCIENCES TECHNICAL ACHIEVEMENT AWARD FOR IT’S CREATION. </p>
+
+                        <p>1982 - SPECIAL PERSONAL THANKS AND APPRECIATION FROM OWNER TOM BURTON OF CALICO ANIMATIONS FOR THE CREATION OF THE OPENING TITLE SEQUENCE OF THE JOHN DAVIDSON TELEVISION SHOW, WHICH THEY RECEIVED AN ACADEMY OF TELEVISION ARTS EMMY AWARD FOR BEST OPENING TITLE SEQUENCE.</p>
+                    </div>
+
+                    <div id="credits" class="hidden">
+
+                        <header>
+                            <h3>Applied Reserach</h3>
+                        </header>
+                        <nav>
+                            <ul>
+                                <li data-to="bio1">Bio</li>
+                                <li data-to="credits">Credits</li>
+                                <li data-to="accolades">Accolades and Special Thanks</li>
+                            </ul>
+                        </nav>
                         <ul>
 
                             <li>
@@ -179,7 +248,16 @@ http://slickplan.com/gdnjqbjhde
 
 
 
-                                - Developed, produced, directed, and distributed an award winning children’s educational video series entitled "ZAP": -- conceived and wrote five episodes from initial outlines to final shooting scripts with additional narration for post production; -- produced and directed the five episodes from initial inception to final post production mixing and mastering; -- supervised and approved all marketing study's generated from test screenings by children in the age group from two to ten years of age; -- designed and supervised the overall merchandise and advertising packaging and manufacturing.
+                                <ul>
+                                    <li>- Developed, produced, directed, and distributed an award winning children’s educational video series entitled "ZAP":
+                                        <ul>
+                                            <li>-- conceived and wrote five episodes from initial outlines to final shooting scripts with additional narration for post production;</li>
+                                            <li>-- produced and directed the five episodes from initial inception to final post production mixing and mastering;</li>
+                                            <li>-- supervised and approved all marketing study's generated from test screenings by children in the age group from two to ten years of age;</li>
+                                            <li>-- designed and supervised the overall merchandise and advertising packaging and manufacturing.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
 
                                 <h3>Innovation / Exploration</h3>
 
@@ -206,10 +284,10 @@ http://slickplan.com/gdnjqbjhde
                                                 -- oversaw the utilization of the completed system during the production of the worlds first 24P digitally recorded stop motion animation short film “Rick and Rocky”.
                                             </li>
 
-                                    </li>
 
 
-                                    </ul>
+
+                                        </ul>
 
                                 </ul>
 
@@ -255,7 +333,7 @@ http://slickplan.com/gdnjqbjhde
 
 
                                         </ul>
-
+                                    </li>
                                 </ul>
 
                                 <h3>Professional Skills and Credits</h3>
@@ -697,7 +775,6 @@ http://slickplan.com/gdnjqbjhde
                                 <p class="professionalcredit">1979 - LOVE AT FIRST BITE ( C.P.C. ASSOCIATES ) - FEATURE POSITION : ASST. STAGE CINEMATOGRAPHER FOR ENDING BLUE SCREEN BAT’S SHOT</p>
 
                                 <p class="professionalcredit">1978 - DON'T STALK IN THE DARK ( ANARAMA FILM PROD. ) - FEATURE POSITION : VISUAL EFFECTS DIRECTOR AND PRODUCER FOR NO-BUDGET FEATURE</p>
-
                     </div>
 
                 </article>
@@ -737,42 +814,32 @@ http://slickplan.com/gdnjqbjhde
     <script>
         $(document).ready(
             function () {
-                var a = [
-                    {
-                        image: "images/t2.jpg",
-                        title: "Terminator 2",
-                        caption: "Terminator 2"
-                    },
-                    {
-                        image: "images/abyss.jpg",
-                        title: "The Abyss",
-                        caption: "The Abyss"
-                    },
-                    {
-                        image: "images/dino.jpg",
-                        title: "Dinosaur Island",
-                        caption: "Dinosaur Island"
-                    }, {
-                        image: "images/scooby.jpg",
-                        title: "Scooby",
-                        caption: 'From "Jay and Silent Bob Strike Back"'
-                    }, {
-                        image: "images/doughboy.jpg",
-                        title: "Pillsbury Doughboy",
-                        caption: 'Pillsbury Doughboy'
-                    }
-      ];
-                $(".left").PikaChoose({
-                    data: a
+                $('figure').click(function () {
+                    var index = parseInt($(this).data('id'));
+                    $('.right article > div').each(function (i) {
+                        if (i == index - 1) {
+                            return;
+                        }
+                        $(this).slideUp();
+                    });
+                    $('#bio' + index).slideDown();
+                });
+                $('article nav ul li').click(function () {
+                    var index = $(this).data('to');
+                    console.log(index);
+                    $('.right article > div').each(function () {
+                        if ($(this).attr('id') == index) {
+                            return;
+                        }
+                        $(this).slideUp();
+                    });
+                    $('#' + index).slideDown();
                 });
             });
     </script>
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.pikachoose.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.touchwipe.min.js"></script>
     <!-- endbuild -->
 </body>
 
