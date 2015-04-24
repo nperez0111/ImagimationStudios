@@ -6,6 +6,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    background-color: $blue;
 }
 
 @font-face {
@@ -48,14 +49,16 @@ header {
             li {
                 display: inline-block;
                 width: 12.5%;
-                padding: 0.5em 0;
+                padding: 5px 0;
                 a {
                     color: $fontColor;
                     text-decoration: none;
                     padding-bottom: 3px;
+                    text-transform: uppercase;
                 }
-                &:hover a {
+                &:hover {
                     border-bottom: 5px solid $yellow;
+                    padding-bottom:0;
                 }
             }
         }
@@ -75,17 +78,32 @@ main {
     
     .left, .right {
         width: 50%;
-        display: table-cell;
         vertical-align: middle;
+        display: table-cell;
         img {
             margin: 0 auto;
         }
         figure {
-            width: 50%;
+            width: 100%;
             margin: 0;
             box-sizing: border-box;
             padding: 0.75em;
             float: left;
+            figcaption{
+            text-align: center;
+                display: block;
+                background-color:#333;
+                color:white;
+                padding:0.25em;
+            }
+            img{
+            width:100%;
+            }
+        }
+        video{
+        margin:1.5em 0;
+            width:90%;
+            margin:0 auto;
         }
     }
 }

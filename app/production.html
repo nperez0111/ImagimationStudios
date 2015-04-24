@@ -1,5 +1,9 @@
 <!doctype html>
 <html class="no-js">
+<!--
+Nicholas Perez and Juan Herrera
+http://slickplan.com/gdnjqbjhde
+-->
 
 <head>
     <meta charset="utf-8">
@@ -10,10 +14,15 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
+    <link rel="stylesheet" href="styles/galleryspecific.css">
+
     <!-- endbuild -->
 </head>
 
@@ -46,7 +55,55 @@
     </header>
     <main>
         <div class="wrap">
-            <div class="left">left</div>
+            <div class="left">
+                <div>
+                    <figure><img src="images/25_1d.jpg" alt="Little Ball Lost">
+                        <figcaption>Little Ball Lost Storyboards for Little Ball lost</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure><img src="images/25-6.jpg" alt="Little ball lost">
+                        <figcaption>Little ball lost</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure><img src="images/25-3.jpg" alt="Little ball lost down">
+                        <figcaption>Little ball lost down</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure><img src="images/25-9.jpg" alt="Little ball lost">
+                        <figcaption>Little ball lost</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure><img src="images/25_1d.jpg" alt="Little ball lost crying">
+                        <figcaption>Little ball lost crying</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure><img src="images/25_1c.jpg" alt="Little ball lost happy">
+                        <figcaption>Little ball lost happy</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure><img src="images/25_1a.jpg" alt="Little lost ball high">
+                        <figcaption>Little lost ball high</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure><img src="images/25_1b.jpg" alt="Little lost ball mom">
+                        <figcaption>Little lost ball mom</figcaption>
+                    </figure>
+                </div>
+            </div>
             <div class="right">
                 <article>
                     <header>
@@ -73,30 +130,21 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = '//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
-    </script>
-
+    <!--
+    
+    
+    https://github.com/kenwheeler/slick/ is the new jquery gallery
+    http://kenwheeler.github.io/slick/ other link with documentation 
+    
+    
+    -->
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+        <!-- endbuild -->
 </body>
 
 </html>

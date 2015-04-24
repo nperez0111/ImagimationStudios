@@ -1,0 +1,18 @@
+main .left {
+            width: 30% !important;
+            vertical-align: top !important;
+        }
+        
+        main .right {
+            width: 70% !important;
+        }
+        
+        article {
+            max-height: 500px !important;
+            overflow: auto !important;
+        }
+        
+        main .left figure,
+        main .right figure {
+            width: 50% !important;
+        }
