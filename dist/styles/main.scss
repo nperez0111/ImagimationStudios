@@ -1,0 +1,208 @@
+$blue:#203D89;
+$yellow:#F6EF87;
+$logoSize:1.75em;
+$fontColor:#F6EF87;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: $blue;
+}
+
+@font-face {
+    font-family: 'texgyrechorusregular';
+    src: url('hal_miles_font-webfont.eot');
+    src: url('hal_miles_font-webfont.eot?#iefix') format('embedded-opentype'), url('hal_miles_font-webfont.woff2') format('woff2'), url('hal_miles_font-webfont.woff') format('woff'), url('hal_miles_font-webfont.ttf') format('truetype'), url('hal_miles_font-webfont.svg#texgyrechorusregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    background-color: $blue;
+    margin: 0;
+    padding: 2em 0 2em 0;
+    color: $fontColor;
+    /*last word is not included in padding so this adds it*/
+    
+    #logo {
+        display: inline-block;
+        float: left;
+        padding-left: 20px;
+        h1 {
+            margin: 0;
+            font-size: $logoSize;
+            font-family: 'texgyrechorusregular', serif;
+            span {
+                display: block;
+            }
+        }
+    }
+    nav {
+        display: inline-block;
+        width: 80%;
+        background-color: $blue;
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            li {
+                display: inline-block;
+                width: 12.5%;
+                padding: 5px 0;
+                a {
+                    color: $fontColor;
+                    text-decoration: none;
+                    padding-bottom: 3px;
+                    text-transform: uppercase;
+                }
+                &:hover {
+                    border-bottom: 5px solid $yellow;
+                    padding-bottom:0;
+                }
+            }
+        }
+    }
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    display: table;
+    /*only works if you set height of left and right classes*/
+    
+    .left, .right {
+        width: 50%;
+        vertical-align: middle;
+        display: table-cell;
+        img {
+            margin: 0 auto;
+        }
+        figure {
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0.75em;
+            float: left;
+            figcaption{
+            text-align: center;
+                display: block;
+                background-color:#333;
+                color:white;
+                padding:0.25em;
+            }
+            img{
+            width:100%;
+            }
+        }
+        video{
+        margin:1.5em 0;
+            width:90%;
+            margin:0 auto;
+        }
+    }
+}
+
+footer {
+    clear: both;
+    background-color: $blue;
+    color: $fontColor;
+    padding: 1em 0;
+    p {
+        text-align: right;
+        font-size: 0.75em;
+    }
+}
+
+article {
+    border: 1px solid #203D89;
+    background-color: #FFFFFF;
+    margin: 1.5em auto;
+    header {
+        background-color: #203D89;
+        line-height: normal;
+        color: #F6EF87;
+        font-size: 0.8em;
+        padding: 5px 0;
+        text-align: center;
+        h2, h3 {
+            margin: 0px;
+        }
+    }
+    p {
+        margin: 0;
+        text-align: left;
+        padding: 1em 0.5em;
+        .shortstitles {
+            font-style: italic;
+        }
+        a {
+            color: #F6B20C;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    span {
+        padding: 1em;
+    }
+    ul {
+        margin: 0;
+    }
+    div nav ul {
+        margin: 0 0.5em;
+        li {
+            position: relative;
+            top: 1px;
+            float: left;
+            background-color: #DDD;
+            list-style: none;
+            border-left: solid 1px #CCC;
+            border-bottom: solid 1px #999;
+            border-top: solid 1px #999;
+            border-right: solid 1px #999;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            cursor: pointer;
+            font-family: "Century Gothic", Geneva, Verdana, Helvetica, Arial, sans-serif;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-right: 1px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 3px;
+            padding-right: 10px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+        }
+    }
+    div p:first-of-type,
+    div ul:first-of-type {
+        clear: both;
+    }
+    div nav + ul {
+        padding-top: 1.5em;
+    }
+    div ul {
+        list-style: none;
+        margin:0;
+          padding: 0.65em;
+        li{
+        font-weight: 600;
+            ul li{
+            font-weight: normal;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

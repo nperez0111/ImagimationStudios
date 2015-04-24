@@ -1,0 +1,16 @@
+main .left,main .right{
+    display:block !important;
+        float: left;
+    }
+.slick-prev:before, .slick-next:before{
+color:#666;
+}
+.slick-prev, .slick-next{
+top:auto;
+}
+.slick-prev{
+left:0;
+}
+.slick-next{
+right:0;
+}
