@@ -1,1 +1,162 @@
-body,html{margin:0;padding:0;background-color:#203D89}@font-face{font-family:texgyrechorusregular;src:url(hal_miles_font-webfont.eot);src:url(hal_miles_font-webfont.eot?#iefix) format('embedded-opentype'),url(hal_miles_font-webfont.woff2) format('woff2'),url(hal_miles_font-webfont.woff) format('woff'),url(hal_miles_font-webfont.ttf) format('truetype'),url(hal_miles_font-webfont.svg#texgyrechorusregular) format('svg');font-weight:400;font-style:normal}header{width:100%;background-color:#203D89;margin:0;padding:2em 0;color:#F6EF87}header #logo{display:inline-block;float:left;padding-left:20px}header #logo h1{margin:0;font-size:1.75em;font-family:texgyrechorusregular,serif}header #logo h1 span{display:block}header nav{display:inline-block;width:80%;background-color:#203D89}header nav ul{list-style:none;text-align:center;padding:0}header nav ul li{display:inline-block;width:12.5%;padding:5px 0}header nav ul li a{color:#F6EF87;text-decoration:none;padding-bottom:3px;text-transform:uppercase}header nav ul li:hover{border-bottom:5px solid #F6EF87;padding-bottom:0}.wrap{max-width:960px;margin:0 auto}main{width:100%;background-color:#fff;display:table}main .left,main .right{width:50%;vertical-align:middle}main .left img,main .right img{margin:0 auto}main .left figure,main .right figure{width:100%;margin:0;box-sizing:border-box;padding:.75em;float:left}main .left figure figcaption,main .right figure figcaption{text-align:center;display:block;background-color:#333;color:#fff;padding:.25em}main .left figure img,main .right figure img{width:100%}main .left video,main .right video{width:90%;margin:0 auto}footer{clear:both;background-color:#203D89;color:#F6EF87;padding:1em 0}footer p{text-align:right;font-size:.75em}article{border:1px solid #203D89;background-color:#FFF;margin:1.5em auto}article header{background-color:#203D89;line-height:normal;color:#F6EF87;font-size:.8em;padding:5px 0;text-align:center}article header h2,article header h3{margin:0}article p{margin:0;text-align:left;padding:1em .5em}article p .shortstitles{font-style:italic}article p a{color:#F6B20C;text-decoration:none}article p a:hover{text-decoration:underline}article span{padding:1em}article ul{margin:0}article div nav ul{margin:0 .5em}article div nav ul li{position:relative;top:1px;float:left;background-color:#DDD;list-style:none;border-left:solid 1px #CCC;border-bottom:solid 1px #999;border-top:solid 1px #999;border-right:solid 1px #999;-moz-user-select:none;-khtml-user-select:none;cursor:pointer;font-family:"Century Gothic",Geneva,Verdana,Helvetica,Arial,sans-serif;font-size:.8em;font-weight:700;margin:0 1px 0 0;padding:3px 10px}article div p:first-of-type,article div ul:first-of-type{clear:both}article div nav+ul{padding-top:1.5em}article div ul{list-style:none;margin:0;padding:.65em}article div ul li{font-weight:600}article div ul li ul li{font-weight:400}.hidden{display:none}main .left,main .right{display:block!important;float:left}.slick-next:before,.slick-prev:before{color:#666}.slick-next,.slick-prev{top:auto}.slick-prev{left:0}.slick-next{right:0}
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #203D89; }
+
+@font-face {
+  font-family: 'texgyrechorusregular';
+  src: url('hal_miles_font-webfont.eot');
+  src: url('hal_miles_font-webfont.eot?#iefix') format('embedded-opentype'), url('hal_miles_font-webfont.woff2') format('woff2'), url('hal_miles_font-webfont.woff') format('woff'), url('hal_miles_font-webfont.ttf') format('truetype'), url('hal_miles_font-webfont.svg#texgyrechorusregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  width: 100%;
+  background-color: #203D89;
+  margin: 0;
+  padding: 2em 0 2em 0;
+  color: #F6EF87;
+  /*last word is not included in padding so this adds it*/ }
+  header #logo {
+    display: inline-block;
+    float: left;
+    padding-left: 20px; }
+    header #logo h1 {
+      margin: 0;
+      font-size: 1.75em;
+      font-family: 'texgyrechorusregular', serif; }
+      header #logo h1 span {
+        display: block; }
+  header nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #203D89; }
+    header nav ul {
+      list-style: none;
+      text-align: center;
+      padding: 0; }
+      header nav ul li {
+        display: inline-block;
+        width: 12.5%;
+        padding: 5px 0; }
+        header nav ul li a {
+          color: #F6EF87;
+          text-decoration: none;
+          padding-bottom: 3px;
+          text-transform: uppercase; }
+        header nav ul li:hover {
+          border-bottom: 5px solid #F6EF87;
+          padding-bottom: 0; }
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto; }
+
+main {
+  width: 100%;
+  background-color: white;
+  display: table;
+  /*only works if you set height of left and right classes*/ }
+  main .left, main .right {
+    width: 50%;
+    vertical-align: middle;
+    display: table-cell; }
+    main .left img, main .right img {
+      margin: 0 auto; }
+    main .left figure, main .right figure {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0.75em;
+      float: left; }
+      main .left figure figcaption, main .right figure figcaption {
+        text-align: center;
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 0.25em; }
+      main .left figure img, main .right figure img {
+        width: 100%; }
+    main .left video, main .right video {
+      margin: 1.5em 0;
+      width: 90%;
+      margin: 0 auto; }
+
+footer {
+  clear: both;
+  background-color: #203D89;
+  color: #F6EF87;
+  padding: 1em 0; }
+  footer p {
+    text-align: right;
+    font-size: 0.75em; }
+
+article {
+  border: 1px solid #203D89;
+  background-color: #FFFFFF;
+  margin: 1.5em auto; }
+  article header {
+    background-color: #203D89;
+    line-height: normal;
+    color: #F6EF87;
+    font-size: 0.8em;
+    padding: 5px 0;
+    text-align: center; }
+    article header h2, article header h3 {
+      margin: 0px; }
+  article p {
+    margin: 0;
+    text-align: left;
+    padding: 1em 0.5em; }
+    article p .shortstitles {
+      font-style: italic; }
+    article p a {
+      color: #F6B20C;
+      text-decoration: none; }
+      article p a:hover {
+        text-decoration: underline; }
+  article span {
+    padding: 1em; }
+  article ul {
+    margin: 0; }
+  article div nav ul {
+    margin: 0 0.5em; }
+    article div nav ul li {
+      position: relative;
+      top: 1px;
+      float: left;
+      background-color: #DDD;
+      list-style: none;
+      border-left: solid 1px #CCC;
+      border-bottom: solid 1px #999;
+      border-top: solid 1px #999;
+      border-right: solid 1px #999;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      cursor: pointer;
+      font-family: "Century Gothic", Geneva, Verdana, Helvetica, Arial, sans-serif;
+      font-size: 0.8em;
+      font-weight: bold;
+      margin-top: 0px;
+      margin-right: 1px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 3px;
+      padding-right: 10px;
+      padding-bottom: 3px;
+      padding-left: 10px; }
+  article div p:first-of-type, article div ul:first-of-type {
+    clear: both; }
+  article div nav + ul {
+    padding-top: 1.5em; }
+  article div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.65em; }
+    article div ul li {
+      font-weight: 600; }
+      article div ul li ul li {
+        font-weight: normal; }
+
+.hidden {
+  display: none; }

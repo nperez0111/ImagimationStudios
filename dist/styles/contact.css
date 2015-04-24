@@ -50,3 +50,8 @@
      padding: 1em;
      clear: both;
  }
+main .left, main .right {
+    width: 50%;
+    vertical-align: middle;
+    padding: 1em;
+}
