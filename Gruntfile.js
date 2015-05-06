@@ -310,7 +310,7 @@ module.exports = function (grunt) {
     //   dist: {}
     // },
 
-    // Copies remaining files to places other tasks can use
+    // Copies remaining files to places other tasks can use/*fonts/{,star/}*/
     copy: {
       dist: {
         files: [{
@@ -322,7 +322,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/*.*',
+              'videos/*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
