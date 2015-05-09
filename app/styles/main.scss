@@ -1,7 +1,20 @@
 $blue:#203D89;
 $yellow:#F6EF87;
-$logoSize:1.75em;
+$logoSize:2.75em;
 $fontColor:#F6EF87;
+$break-small:320px;
+$break-large:960px;
+@mixin respond($media) {
+  @if $media == small {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == large {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
 body,
 html {
     margin: 0;
@@ -22,39 +35,72 @@ header {
     background-color: $blue;
     margin: 0;
     padding: 2em 0 2em 0;
-    color: $fontColor;
+    color: #5592C9;
     /*last word is not included in padding so this adds it*/
     
     #logo {
-        display: inline-block;
-        float: left;
-        padding-left: 20px;
+        width:100%;
+        display: block;
+        text-align: left;
+        @include respond(large){
+            display: inline-block;
+            float: left;
+            box-sizing: border-box;
+            width:25%;
+            
+        }
         h1 {
             margin: 0;
             font-size: $logoSize;
             font-family: 'texgyrechorusregular', serif;
-            span {
-                display: block;
+            text-shadow: 0 0 7px #000;
+            @include respond(large){
+            font-size: 2em;
+            }
+            /*&:first-child{@include respond(large){padding-left: 20px;}}*/
+            img{
+            width:100%;
+                border: none;
+                margin:0;
             }
         }
     }
     nav {
         display: inline-block;
-        width: 80%;
+        width: 100%;
         background-color: $blue;
+        font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+        @include respond(large){
+            width:75%;
+        }
+        
         ul {
             list-style: none;
             text-align: center;
             padding: 0;
             li {
                 display: inline-block;
-                width: 12.5%;
+                width:33.333%;
+                float:left;
                 padding: 5px 0;
+                margin:0.75em 0;
+                @include respond(large){
+                    width: 15%;
+                    float:none;
+                    margin:0;
+                }
+                &:nth-child(3n+1){
+                clear:left;
+                    @include respond(large){
+                    clear:none;
+                    }
+                }
                 a {
                     color: $fontColor;
                     text-decoration: none;
                     padding-bottom: 3px;
                     text-transform: uppercase;
+                    font-size: 0.9em;
                 }
                 &:hover {
                     border-bottom: 5px solid $yellow;
@@ -66,20 +112,26 @@ header {
 }
 
 .wrap {
-    max-width: 960px;
+    
+    width:100%;
+    min-width:300px;
     margin: 0 auto;
+    padding:0 10px;
+    box-sizing: border-box;
+    @include respond(large){max-width: 960px;}
 }
 
 main {
     width: 100%;
     background-color: white;
-    display: table;
+    @include respond(large){display: table;}
     /*only works if you set height of left and right classes*/
     
     .left, .right {
-        width: 50%;
-        vertical-align: middle;
-        display: table-cell;
+        width:100%;
+        padding-bottom:1em;
+        @include respond(large){width: 49%;vertical-align: middle;        display: table-cell;padding-bottom: 0;}
+        
         img {
             margin: 0 auto;
             padding-top:1.5em;
@@ -88,7 +140,7 @@ main {
             width: 100%;
             margin: 0;
             box-sizing: border-box;
-            padding: 0.75em;
+            @include respond(large){padding: 0.75em;}
             float: left;
             figcaption{
             text-align: center;
@@ -102,10 +154,9 @@ main {
             }
         }
         video{
-        margin:1.5em 0;
-            width:90%;
             margin:0 auto;
-            padding-top:1.5em
+            width: 100%;
+            @include respond(large){width:90%;padding-left:5%;}
         }
     }
 }

@@ -1,7 +1,11 @@
 main .left,main .right{
-    display:block !important;
+    display:inline-block !important;
+}
+/*@media only screen and (min-width: 960px){
+    main .left,main .right{
         float: left;
     }
+}*/
 .slick-prev:before, .slick-next:before{
 color:#666;
 }
