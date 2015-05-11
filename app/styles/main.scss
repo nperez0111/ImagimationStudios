@@ -130,11 +130,11 @@ main {
     .left, .right {
         width:100%;
         padding-bottom:1em;
-        @include respond(large){width: 49%;vertical-align: middle;        display: table-cell;padding-bottom: 0;}
+        @include respond(large){width: 49%;vertical-align: middle;        display: table-cell;padding-bottom: 1.5em;padding-top:1.5em;}
         
         img {
             margin: 0 auto;
-            padding-top:1.5em;
+            /*padding-top:1.5em;*/
         }
         figure {
             width: 100%;
@@ -175,7 +175,7 @@ footer {
 article {
     border: 1px solid #203D89;
     background-color: #FFFFFF;
-    margin: 1.5em auto;
+    margin: 0 auto;
     header {
         background-color: #203D89;
         line-height: normal;

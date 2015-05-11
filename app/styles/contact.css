@@ -1,52 +1,113 @@
- label {
-     display: block;
- }
- 
- article form .right {
-     vertical-align: text-top;
-     padding: 1em;
-     width: 50%;
- }
- 
- article form .left {
-     padding: 1em;
-     width: 50%;
- }
- 
- textarea {
-     height: 125px;
- }
- 
- main .left {
-     width: 25%;
-     padding-top: 2em;
- }
- 
- img {
-     width: 100%
- }
- 
- .left,
- .right {
-     box-sizing: border-box;
- }
- 
- main .right {
-     width: 70%;
- }
- 
- .right article .left,
- .right article .right {
-     width: 50%;
-     display: inline-block;
-     float: left;
-     box-sizing: border-box;
- }
- 
- h4 {
-     vertical-align: text-top;
-     font-size: 1.0125em;
-     color: #203D89;
-     padding: 1em;
-     clear: both;
- }
+label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+input {
+    width: 75%;
+}
+
+article form .right {
+    vertical-align: text-top;
+    padding: 1em;
+    width: 50%;
+}
+
+article form .left {
+    padding: 1em;
+    width: 50%;
+}
+
+textarea {
+    height: 100px;
+    width: 95%;
+    margin: 1em auto;
+    display: block;
+}
+
+button {
+    float: right;
+    margin: 0 2.5%;
+}
+
+main .left {
+    width: 30%;
+}
+
+main .right {
+    width: 70%;
+    padding: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+.left,
+.right {
+    box-sizing: border-box;
+}
+
+.right article .left,
+.right article .right {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+}
+
+h4 {
+    vertical-align: text-top;
+    font-size: 1.0125em;
+    color: #203D89;
+    padding: 1em;
+    clear: both;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+@media only screen and (max-width: 960px) {
+    main .right,
+    main .left {
+        width: 49%;
+        vertical-align: middle;
+        display: table-cell;
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main .right,
+    main .left {
+        display: block;
+        width: 100%;
+        padding: 1.5em;
+    }
+    textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .right article .left,
+    .right article .right {
+        width: 100%;
+        display: block;
+    }
+}
