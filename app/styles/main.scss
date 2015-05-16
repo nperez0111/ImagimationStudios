@@ -69,7 +69,7 @@ header {
         display: inline-block;
         width: 100%;
         background-color: $blue;
-        font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+          font-family: "Century Gothic", Verdana, Geneva, Helvetica, Arial, sans-serif;
         @include respond(large){
             width:75%;
         }
@@ -124,6 +124,7 @@ header {
 main {
     width: 100%;
     background-color: white;
+      font-family: "Century Gothic", Verdana, Geneva, Helvetica, Arial, sans-serif;
     @include respond(large){display: table;}
     /*only works if you set height of left and right classes*/
     
