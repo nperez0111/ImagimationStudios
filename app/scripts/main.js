@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    "use strict";
     $('#date').text(new Date().getFullYear());
     $('.left').slick({
         mobileFirst: true,
