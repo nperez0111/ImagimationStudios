@@ -1,12 +1,11 @@
-$(document).ready(function () {
+$( document ).ready( function () {
     "use strict";
-    $('#date').text(new Date().getFullYear());
-    $('.left').slick({
+    $( '.left' ).slick( {
         mobileFirst: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500
-    });
-});
+    } );
+} );
