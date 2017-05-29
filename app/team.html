@@ -28,12 +28,11 @@ http://slickplan.com/gdnjqbjhde
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <header>
         <div class="wrap">
             <div id="logo">
                 <h1>Hal Miles</h1>
-               <h1>
+                <h1>
                 <img src="images/imagimationstudios.svg" alt="imagimation studios">
                 </h1>
             </div>
@@ -52,12 +51,9 @@ http://slickplan.com/gdnjqbjhde
             </nav>
         </div>
     </header>
-
     <main>
         <div class="wrap">
             <div class="left">
-
-
                 <figure data-id="1">
                     <img src="http://www.imagimationstudios.com/images/hal.jpg" alt="Hal Miles Image">
                     <figcaption>Hal Miles President, Producer and Director</figcaption>
@@ -66,12 +62,9 @@ http://slickplan.com/gdnjqbjhde
                     <img src="http://www.imagimationstudios.com/images/nancy.jpg" alt="Nancy S.Miles Image">
                     <figcaption>Nancy S. Miles Vice President and Producer</figcaption>
                 </figure>
-
-
             </div>
             <div class="right">
                 <article>
-
                     <div id="bio1">
                         <header>
                             <h2> Hal Miles</h2>
@@ -83,20 +76,14 @@ http://slickplan.com/gdnjqbjhde
                             </ul>
                         </nav>
                         <p> Hal Miles is an international award winning animation, visual effects, and live action film maker. He has had an impressive 40 plus year career in the motion picture, television, and amusement park industries specializing in animation, visual effects, animatronics, creature effects, and live action as a director, producer, supervisor, and technician.</p>
-
-                        <p>Hal has helped to or personally created numerous classic and ground breaking techniques and moments on many Academy Award, Emmy Award, and Cleo Award winning productions. Hal believes in creating a magically fun environment and experience which allows everyone to have just that much more fun while successfully creating.</p>
+                        <p>Hal has helped to or personally created numerous classic and ground breaking techniques and moments on many Academy Award, Emmy Award, and Clio Award winning productions. Hal believes in creating a magically fun environment and experience which allows everyone to have just that much more fun while successfully creating.</p>
                     </div>
-
-
                     <div id="bio2" class="hidden">
                         <header>
                             <h2> Nancy S. Miles </h2>
                         </header>
                         <p> Nancy Miles has had a long term affair with the art of Animation and Film. She was fortunate to call many entertainment pioneers Friend along with current industry notables. Her working knowledge of old school industry techniques gives her a great foundation and perspective towards today’s entertainment processes that the Studio creatively utilizes. Having run successful businesses also gives her the foresight to help the team run smoothly and bring the production in on time and on budget. Childhood inquisitiveness, love of a good story, and the universe of color is what runs this section of the team. Life is too short not to have fun!.</p>
-
                     </div>
-
-
                     <!--<div id="accolades" class="hidden">
                         <header>
                             <h3>Accolades and Special Thanks</h3>
@@ -142,9 +129,7 @@ http://slickplan.com/gdnjqbjhde
 
                         <p>1982 - SPECIAL PERSONAL THANKS AND APPRECIATION FROM OWNER TOM BURTON OF CALICO ANIMATIONS FOR THE CREATION OF THE OPENING TITLE SEQUENCE OF THE JOHN DAVIDSON TELEVISION SHOW, WHICH THEY RECEIVED AN ACADEMY OF TELEVISION ARTS EMMY AWARD FOR BEST OPENING TITLE SEQUENCE.</p>
                     </div>-->
-
                     <div id="credits" class="hidden">
-
                         <header>
                             <h3>Resume</h3>
                         </header>
@@ -759,9 +744,7 @@ http://slickplan.com/gdnjqbjhde
                         <p class="professionalcredit">1979 - LOVE AT FIRST BITE ( C.P.C. ASSOCIATES ) - FEATURE POSITION : ASST. STAGE CINEMATOGRAPHER FOR ENDING BLUE SCREEN BAT’S SHOT</p>
 
                         <p class="professionalcredit">1978 - DON'T STALK IN THE DARK ( ANARAMA FILM PROD. ) - FEATURE POSITION : VISUAL EFFECTS DIRECTOR AND PRODUCER FOR NO-BUDGET FEATURE</p>-->
-                        
                     </div>
-
                 </article>
             </div>
         </div>
@@ -771,42 +754,40 @@ http://slickplan.com/gdnjqbjhde
             <p>&copy; Copyright 2008-<span id="date"></span> Hal Miles Imagimation Studios,Inc.</p>
         </div>
     </footer>
-
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-   
+    <!-- build:js({app,.tmp}) scripts/date.js -->
+    <script type="text/javascript" src="scripts/date.js"></script>
+    <!-- endbuild -->
     <script>
-        $(document).ready(
-            function () {
-                $('figure').click(function () {
-                    var index = parseInt($(this).data('id'));
-                    $('.right article > div').each(function (i) {
-                        if (i == index - 1) {
-                            return;
-                        }
-                        $(this).slideUp();
-                    });
-                    $('#bio' + index).slideDown();
+    $(document).ready(
+        function() {
+            $('figure').click(function() {
+                var index = parseInt($(this).data('id'));
+                $('.right article > div').each(function(i) {
+                    if (i == index - 1) {
+                        return;
+                    }
+                    $(this).slideUp();
                 });
-                $('article nav ul li').click(function () {
-                    var index = $(this).data('to');
-                    console.log(index);
-                    $('.right article > div').each(function () {
-                        if ($(this).attr('id') == index) {
-                            return;
-                        }
-                        $(this).slideUp();
-                    });
-                    $('#' + index).slideDown();
-                });
+                $('#bio' + index).slideDown();
             });
+            $('article nav ul li').click(function() {
+                var index = $(this).data('to');
+                console.log(index);
+                $('.right article > div').each(function() {
+                    if ($(this).attr('id') == index) {
+                        return;
+                    }
+                    $(this).slideUp();
+                });
+                $('#' + index).slideDown();
+            });
+        });
     </script>
-
 </body>
 
 </html>

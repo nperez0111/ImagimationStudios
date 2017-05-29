@@ -24,12 +24,11 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <header>
         <div class="wrap">
             <div id="logo">
                 <h1>Hal Miles</h1>
-               <h1>
+                <h1>
                 <img src="images/imagimationstudios.svg" alt="imagimation studios">
                 </h1>
             </div>
@@ -48,73 +47,47 @@
             </nav>
         </div>
     </header>
-
     <main>
         <div class="wrap cf">
-            <div class="left"> <img src="http://imagimationstudios.com/images/contact_ray.jpg"> </div>
+            <div class="left"> <img src="images/ray.jpg"> </div>
             <div class="right">
                 <article>
                     <header>
                         <h2> Contact Us@Imagimation</h2> </header>
-
-
-
-
                     <form action="" class="cf">
-
                         <div class="left">
                             <label form="name">Name:</label>
                             <input type="text" name="name" placeholder="John Doe" id="name" required>
-
-
                             <label form="email">Email:</label>
                             <input type="text" name="email" placeholder="email@host.com" id="email" required>
-
-
-
                             <label form="phone">Phone:</label>
                             <input type="tel" name="phone" placeholder="555-555-5555">
-
-
-
                             <label form="subject">Subject:</label>
                             <input name="text" id="subject" required>
-
                         </div>
-
-
-
                         <div class="right">
-
                             <label form="questions"> Questions or Comments:</label>
                             <textarea name="subject" id="questions" required> </textarea>
                             <button type="submit">Submit</button>
                         </div>
-
-
                     </form>
-
-
-
-
                 </article>
             </div>
         </div>
-
     </main>
     <footer>
         <div class="wrap">
             <p>&copy; Copyright 2008-<span id="date"></span> Hal Miles Imagimation Studios,Inc.</p>
         </div>
     </footer>
-
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
+    <<!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:js({app,.tmp}) scripts/date.js -->
+        <script type="text/javascript" src="scripts/date.js"></script>
+        <!-- endbuild -->
 </body>
 
 </html>
